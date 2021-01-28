@@ -4,4 +4,5 @@ https://chrome.google.com/webstore/detail/listly-data-scraper/ihljmnfgkkmoikgkdk
 Batch Link Downloader
 https://chrome.google.com/webstore/detail/batch-link-downloader/aiahkbnnpafepcgnhhecilboebmmolnn?hl=en-US
 
-`pdftotext -f 3 -l 3 2020_12_Statement.pdf text.txt`
+`rename -n 's/_([0-9]{1})_Statement/_0$1_Statement/' *.pdf`
+`pdftotext -f 3 -l 3 2020_12_Statement.pdf text.txt
